@@ -1,6 +1,6 @@
 package com.lambdaschool.school.controller;
 
-import com.lambdaschool.restaurants.model.ErrorDetail;
+import com.lambdaschool.school.model.ErrorDetail;
 import com.lambdaschool.school.model.Student;
 import com.lambdaschool.school.service.StudentService;
 import io.swagger.annotations.*;
@@ -140,7 +140,7 @@ public class StudentController
             @ApiResponse(code = 201, message = "Student Successfully Deleted",
                          response = void.class),
             @ApiResponse(code = 500, message = "Error Deleting Student",
-                         response = com.lambdaschool.restaurants.model.ErrorDetail.class)
+                         response = ErrorDetail.class)
     })
     @DeleteMapping("/Student/{Studentid}")
     public ResponseEntity<?> deleteStudentById(

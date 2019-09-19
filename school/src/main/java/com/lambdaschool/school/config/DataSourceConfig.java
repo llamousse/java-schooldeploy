@@ -68,6 +68,8 @@ public class DataSourceConfig
         } else
         {
             // Assumes H2
+            // jdbc:h2:mem:testdb - java database connector : using H2 database :
+            //                      storing it in memory : database storing memory is testdb
             myUrlString = "jdbc:h2:mem:testdb";
             myDriverClass = "org.h2.Driver";
             myDBUser = "sa";

@@ -1,6 +1,6 @@
 package com.lambdaschool.school.controller;
 
-import com.lambdaschool.restaurants.model.ErrorDetail;
+import com.lambdaschool.school.model.ErrorDetail;
 import com.lambdaschool.school.model.Course;
 import com.lambdaschool.school.service.CourseService;
 import com.lambdaschool.school.view.CountStudentsInCourses;
