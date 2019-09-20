@@ -1,0 +1,18 @@
+# getting access token from user
+curl -X POST --user "lambda-client:lambda-secret" -d "grant_type=password&username=admin&password=password" http://vyue-schooldeploy.herokuapp.com/login
+
+# get users (using admin)
+ curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 48eb808d-1747-4959-bedc-df1a393fafe5" http://vyue-schooldeploy.herokuapp.com/users/users
+
+# create new user
+curl -X POST -H "Content-type: application/json" -d "{\"username\": \"ginger\", \"password\": \"EATEATEAT\"}" http://vyue-schooldeploy.herokuapp.com/createnewuser
+
+# returns courses
+curl -X GET "http://vyue-schooldeploy.herokuapp.com/courses/courses?page=0&size=3" -H "accept: application/json"
+
+# deletes course by id - code deletes courseid: 1
+curl -X DELETE "http://vyue-schooldeploy.herokuapp.com/courses/courses/1" -H "accept: */*"
+
+# returns student count in each course
+curl -X GET "http://vyue-schooldeploy.herokuapp.com/courses/studcount" -H "accept: application/json"
+
