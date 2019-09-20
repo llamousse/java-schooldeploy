@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.lambdaschool.school.services.UserServiceImplUnitTest
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 27.075 s <<< FAILURE! - in com.lambdaschool.school.services.UserServiceImplUnitTest
+B_findUserById(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.057 s  <<< ERROR!
+com.lambdaschool.school.exception.ResourceNotFoundException: User id 4 not found!
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.B_findUserById(UserServiceImplUnitTest.java:67)
+
+D_delete(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.012 s  <<< ERROR!
+com.lambdaschool.school.exception.ResourceNotFoundException: User id 13 not found!
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.D_delete(UserServiceImplUnitTest.java:85)
+
+GA_updateWithUserRole(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.497 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<com.lambdaschool.school.exception.ResourceFoundException> but was<com.lambdaschool.school.exception.ResourceNotFoundException>
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.GA_updateWithUserRole(UserServiceImplUnitTest.java:186)
+
+G_update(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.305 s  <<< ERROR!
+com.lambdaschool.school.exception.ResourceNotFoundException: 7 Not current user
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.G_update(UserServiceImplUnitTest.java:156)
+
+IA_addUserRoleUserRoleFound(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<com.lambdaschool.school.exception.ResourceFoundException> but was<com.lambdaschool.school.exception.ResourceNotFoundException>
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.IA_addUserRoleUserRoleFound(UserServiceImplUnitTest.java:250)
+
+IB_deleteUserRole(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.011 s  <<< ERROR!
+com.lambdaschool.school.exception.ResourceNotFoundException: User id 11 not found!
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.IB_deleteUserRole(UserServiceImplUnitTest.java:256)
+
+IE_addUserRole(com.lambdaschool.school.services.UserServiceImplUnitTest)  Time elapsed: 0.055 s  <<< ERROR!
+com.lambdaschool.school.exception.ResourceNotFoundException: User id 11 not found!
+	at com.lambdaschool.school.services.UserServiceImplUnitTest.IE_addUserRole(UserServiceImplUnitTest.java:274)
+

@@ -137,6 +137,7 @@
     </dependencies>
 
     <build>
+        <!-- <finalName>${project.artifactId}</finalName>-->
         <finalName>vyue-schooldeploy</finalName>
 
         <plugins>
@@ -145,6 +146,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
+            <!-- PLUGIN TO DEPLOY TO HEROKU -->
             <!-- Heroku Maven Plugin Configuration -->
             <!-- https://cwiki.apache.org/confluence/display/MAVEN/Maven+Properties+Guide -->
             <plugin>
@@ -152,7 +154,7 @@
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>2.0.10</version>
                 <configuration>
-                    <appName>${project.build.finalName}</appName>
+                    <appName>vyue-schooldeploy</appName>
                     <includeTarget>false</includeTarget>
                     <includes>
                         <!--   For windows      <include>${project.build.directory}\${project.build.finalName}.jar</include>-->
